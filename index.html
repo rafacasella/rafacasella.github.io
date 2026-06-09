@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Casella | Data Scientist & Automation Specialist</title>
+	
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botão Secreto Checkbox para controlar o menu sem JavaScript -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- Ícone das 3 Linhas (Hamburguer) que aciona o menu -->
+    <label for="menu-toggle" class="hamburger-button">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Menu Lateral Fixo / Suspenso -->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <label for="menu-toggle" class="close-btn">&times;</label>
+            <h3>Rafael Casella</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#perfil">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#servicos">Methodology</a></li>
+            <li><a href="#contato">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal à Direita -->
+    <main class="main-content">
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section dark-bg">
+            <div class="hero-content">
+                <h1>Hello, I'm <br><span class="highlight-name">Rafael Casella</span></h1>
+                <p class="subtitle">| DATA SCIENTIST | AUTOMATION SPECIALIST | PROFESSIONAL TRADER |</p>
+                
+                <span class="tagline" style="margin-top: 25px; margin-bottom: 25px; display: block;">CONVERT COMPLEX FINANCIAL DATA INTO STRATEGIC INSIGHTS</span>
+                
+                <a href="#perfil" class="btn-outline-white">ABOUT ME <i class="fas fa-chevron-down"></i></a>
+                
+                <!-- Caixa dos Ícones Sociais Inferiores -->
+                <div class="social-icons-hero">
+                    <a href="mailto:rafacasella@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/rafacasella" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-casella-490457368/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PROFILE & SKILLS SECTION -->
+        <section id="perfil" class="profile-section light-bg">
+            <div class="columns-grid">
+                <div class="col">
+                    <h2>PROFILE</h2>
+                    <p class="description">I turn messy data into clear business decisions. Specialized in Python automation, SQL querying, and visual storytelling with dashboards that actually get used.</p>
+                    <div class="info-meta">
+                        <p><strong>NAME:</strong><br><span>Rafael Casella</span></p>
+                        <p><strong>LOCATION:</strong><br><span>São Paulo, Brazil (Open to Remote)</span></p>
+                        <p><strong>EDUCATION:</strong><br><span>B.S. in Computer Engineering</span></p>
+                        <p><strong>SPECIALIZATION:</strong><br><span>Postgraduate in Data Science, Machine Learning & AI (In Progress)</span></p>
+                    </div>
+                    <h3 style="margin: 20px 0 10px 0; font-size: 16px;">INTERESTS</h3>
+                    <p class="description" style="font-size: 14px; margin-bottom: 20px;">
+                        • Analyzing financial markets & investment portfolios<br>
+                        • Intersection of AI and economics<br>
+                        • Macroeconomic trends & global financial markets
+                    </p>
+                    <a href="#contato" class="btn-dark-outline">LET'S TALK</a>
+                </div>
+
+                <div class="col">
+                    <h2>TECH STACK</h2>
+                    <p class="description">Core skills, frameworks, and libraries utilized in my daily development workflow:</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info"><span>PYTHON (Pandas, Matplotlib, Seaborn)</span><span class="badge">Core</span></div>
+                        <div class="bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info"><span>SQL & DATABASES (PostgreSQL, MySQL)</span><span class="badge">Core</span></div>
+                        <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info"><span>MACHINE LEARNING (Scikit-Learn, Statsmodels)</span><span class="badge">Advanced</span></div>
+                        <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info"><span>DEEP LEARNING (TensorFlow, Keras)</span><span class="badge grey">Intermediate</span></div>
+                        <div class="bar"><div class="progress" style="width: 65%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info"><span>AUTOMATION & VISUALIZATION (Streamlit, Playwright)</span><span class="badge">Advanced</span></div>
+                        <div class="bar"><div class="progress" style="width: 88%;"></div></div>
+                    </div>
+                    <a href="https://linkedin.com" target="_blank" class="btn-dark-filled">DOWNLOAD MY RESUME</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio-section light-bg" style="border-top: 1px solid #eee;">
+            
+            <h2>Featured Projects</h2>
+	    
+            <div class="projects-grid">
+                <div class="project-card">
+                    
+                    <div class="project-box">
+                        <h3>Financial Dashboard Automation</h3>
+                        <p><strong>Problem:</strong> Manual Excel reports taking 3h daily.</p>
+                        <p><strong>Impact:</strong> 15h/week saved, real-time data instead of daily for the CFO.</p>
+                        <a href="https://kpi4cfo.streamlit.app/" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    
+                    <div class="project-box">
+                        <h3>Customer Churn Predictor</h3>
+                        <p><strong>Problem:</strong> High monthly churn with no early warning system.</p>
+                        <p><strong>Impact:</strong> Logistic regression model with 82.65% accuracy.</p>
+                        <a href="https://github.com/rafacasella/Data_Analysis_Portfolio/tree/main/Churn_Analysis" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    
+                    <div class="project-box">
+                        <h3>Web Scraping Monitor</h3>
+                        <p><strong>Problem:</strong> Difficult manual tracking of global economic statements.</p>
+                        <p><strong>Impact:</strong> Stealth real-time pipeline to automatically monitor geopolitical mentions.</p>
+                        <a href="https://github.com/rafacasella/Data_Science_Portfolio/tree/main/Web_Scapping_TruthSocial" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+	  <span class="section-tag" style="display: block; margin-top: 30px;">
+    		<a href="https://github.com/rafacasella?tab=repositories" target="_blank" class="project-link">SEE ALL MY PROJECTS</a>
+	</span>
+        </section>
+
+        <!-- 4. METHODOLOGY SECTION -->
+        <section id="servicos" class="services-section dark-bg">
+            <span class="section-tag">METHODOLOGY</span>
+            <h2>How I Work</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>1. Discover</h3>
+                    <p>Asking business questions before querying data.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-broom"></i></div>
+                    <h3>2. Clean</h3>
+                    <p>Pandas and SQL to turn chaotic datasets into structures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>3. Analyze</h3>
+                    <p>Statistical testing and macro trend breakdowns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>4. Visualize</h3>
+                    <p>Interactive reports built for C-level executives.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>5. Automate</h3>
+
+                    <p>Developing and deploying robust Python ETL scripts that handle complete data processing pipelines seamlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT SECTION & FOOTER (DARK THEME) -->
+        <section id="contato" class="contact-section dark-bg">
+            
+            <h2>TALK TO ME!</h2>
+            <p class="section-intro">Let's build something great together.</p>
+            
+            <!-- Botão de E-mail na Paleta Verde Tecnológica -->
+            <a href="mailto:rafacasella@gmail.com" class="btn-email-green">
+                <i class="fas fa-envelope"></i> SEND AN EMAIL
+            </a>
+            
+            <!-- Redes Sociais Centralizadas -->
+            <div class="social-icons-hero" style="margin-top: 40px; margin-bottom: 50px;">
+                <a href="https://wa.me/5517997635500" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/rafacasella" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rafael-casella-490457368/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <!-- Rodapé Limpo e Profissional -->
+            <footer class="simple-footer">
+                <p>&copy; 2026 Rafael Casella. All rights reserved.</p>
+                <p class="design-by">Design by <a href="https://github.com/rafacasella" target="_blank">Rafael Casella</a></p>
+            </footer>
+        </section>
