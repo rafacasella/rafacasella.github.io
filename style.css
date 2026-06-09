@@ -398,3 +398,96 @@ body {
         padding-top: 100%; 
     }
 }
+
+/* ==========================================================================
+   11. SISTEMA DE NAVEGAÇÃO POR ABAS (TABS) PARA STREAMLIT
+   ========================================================================== */
+.tab-switch {
+    display: none; /* Esconde os botões nativos do tipo radio */
+}
+
+/* Barra de Abas */
+.tabs-nav {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Design de cada Aba/Botão */
+.tab-label {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: all 0.3s;
+    margin-bottom: -2px; /* Encaixa em cima da linha da borda inferior */
+}
+
+.tab-label i {
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.tab-label:hover {
+    color: #00e676;
+    background-color: #f5f5f5;
+}
+
+/* Descrição interna de cada painel */
+.tab-panel-desc {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Esconde TODOS os painéis por padrão */
+.tab-panel {
+    display: none;
+    animation: fadeInTab 0.4s ease;
+}
+
+/* LÓGICA DE SELEÇÃO: Exibe o painel correto de acordo com a aba marcada e acende o botão em verde */
+#tab-app1:checked ~ .tabs-nav label[for="tab-app1"],
+#tab-app2:checked ~ .tabs-nav label[for="tab-app2"],
+#tab-app3:checked ~ .tabs-nav label[for="tab-app3"] {
+    background-color: #fff;
+    color: #00e676;
+    border-top: 3px solid #00e676; /* Linha verde no topo do botão ativo */
+    border-bottom: 2px solid #fff; /* Apaga a linha cinza embaixo do botão ativo */
+}
+
+#tab-app1:checked ~ .tabs-content-wrapper .panel-app1,
+#tab-app2:checked ~ .tabs-content-wrapper .panel-app2,
+#tab-app3:checked ~ .tabs-content-wrapper .panel-app3 {
+    display: block; /* Mostra apenas o painel ativo */
+}
+
+/* Animação suave ao trocar de aba */
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste das abas em telas mobile */
+@media (max-width: 600px) {
+    .tabs-nav {
+        flex-direction: column;
+        border-bottom: none;
+        gap: 5px;
+    }
+    .tab-label {
+        border: 1px solid #eee;
+        border-radius: 4px !important;
+        width: 100%;
+        text-align: center;
+    }
+}
