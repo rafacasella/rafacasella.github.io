@@ -32,7 +32,7 @@ const portfolioData = {
             subtitle: "Select a tab below to launch and interact with different data applications directly from this interface.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Financial Dashboard Automation: Real-time financial metrics tracking. Multi-filter architecture to convert raw operational values into executive insights.", src: "https://streamlit.app?embed=true" },
-                { id: "tab-app2", label: "Churn Predictor", icon: "fa-users", desc: "Customer Churn Predictor Demo: Interactive portal running predictive models. Input customer metadata variables to calculate real-time churn probability metrics.", src: "https://streamlit.app" },
+                { id: "tab-app2", label: "Qaunt Strategy", icon: "fa-robot", desc: "AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
                 { id: "tab-app3", label: "Geopolitical Monitor", icon: "fa-globe", desc: "Web Scraping Geopolitical Monitor: Live view of data ingestion scripts. Tracks macroeconomic keywords, news trends, and market sentiments simultaneously.", src: "https://streamlit.app" }
             ],
             footerLink: 'SEE ALL MY PROJECTS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
