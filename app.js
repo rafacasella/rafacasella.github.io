@@ -31,7 +31,7 @@ const portfolioData = {
             title: "Explore My Analytics Dashboards Live",
             subtitle: "Select a tab below to launch and interact with different data applications directly from this interface.",
             tabs: [
-                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Financial Dashboard Automation: Real-time financial metrics tracking. Multi-filter architecture to convert raw operational values into executive insights.", src: "https://streamlit.app?embed=true" },
+                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Financial Dashboard Automation: Real-time financial metrics tracking. Multi-filter architecture to convert raw operational values into executive insights.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
                 { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
                 { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW"}
             ],
@@ -79,7 +79,7 @@ const portfolioData = {
             title: "Explore Meus Dashboards ao Vivo",
             subtitle: "Selecione uma aba abaixo para carregar e interagir com as aplicações de dados direto desta interface.",
             tabs: [
-                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Automação de Dashboard Financeiro: Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro para converter dados operacionais brutos em insights executivos.", src: "https://streamlit.app?embed=true" },
+                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Automação de Dashboard Financeiro: Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro para converter dados operacionais brutos em insights executivos.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
                 { id: "tab-app2", label: "Churn Predictor", icon: "fa-users", desc: "Demonstração do Preditor de Churn: Portal interativo executando modelos preditivos. Insira variáveis de metadados do cliente para calcular a probabilidade de churn em tempo real.", src: "https://streamlit.app" },
                 { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
             ],
