@@ -239,6 +239,7 @@ function renderApp() {
                                 <div class="iframe-responsive">
                                     <iframe src="${t.src}" style="width:100%; border:none;" allow="fullscreen"></iframe>
                                 </div>
+                             `}
                             </div>
                         `).join('')}
                     </div>
