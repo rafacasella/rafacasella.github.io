@@ -222,10 +222,8 @@ function renderApp() {
     					<i class="fas fa-desktop" style="font-size: 40px; color: #00f2fe; margin-bottom: 15px; display: block;"></i>
     					<h4 style="color: #fff; margin-bottom: 12px; font-size: 18px;">${currentLang === 'en' ? 'Standalone Production-Grade Desktop App' : 'Aplicação Executável Local de Alta Performance'}</h4>
    					 <p style="color: #94a3b8; font-size: 14px; max-width: 650px; margin: 0 auto 25px auto;">
-        					${currentLang === 'en' 
-           						 ? 'This intelligence component architecture runs fully decoupled from cloud containers to bypass heavy protection layers via native low-level multi-threading. Download the pre-compiled binary below.' 
-          						 : 'Esta arquitetura de inteligência opera completamente desacoplada de contêineres em nuvem para burlar camadas de segurança complexas via multithreading nativo. Baixe o executável pré-compilado abaixo.'}
-    					</p>
+        					${currentLang === 'en' ? 'This intelligence component architecture runs fully decoupled from cloud containers to bypass heavy protection layers via native low-level multi-threading. Download the pre-compiled binary below.' : 'Esta arquitetura de inteligência opera completamente desacoplada de contêineres em nuvem para burlar camadas de segurança complexas via multithreading nativo. Baixe o executável pré-compilado abaixo.'} 
+          				 </p>
    					 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
        						 <a href="https://github.com" target="_blank" class="btn-dark-filled" style="background: #00f2fe; color: #000; font-weight: bold; border: none; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; display: inline-block; cursor: pointer;">
            						 <i class="fas fa-download"></i> ${currentLang === 'en' ? 'DOWNLOAD PRODUCTION .EXE' : 'BAIXAR EXECUTÁVEL .EXE'}
