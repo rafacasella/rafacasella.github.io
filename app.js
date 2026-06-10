@@ -31,9 +31,9 @@ const portfolioData = {
             title: "Explore My Analytics Dashboards Live",
             subtitle: "Select a tab below to launch and interact with different data applications directly from this interface.",
             tabs: [
-                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Financial Dashboard Automation: Real-time financial metrics tracking. Multi-filter architecture to convert raw operational values into executive insights.", src: "https://streamlit.app?embed=true&embed_options=disable_light_theme" },
-                { id: "tab-app2", label: "Churn Predictor", icon: "fa-users", desc: "Customer Churn Predictor Demo: Interactive portal running predictive models. Input customer metadata variables to calculate real-time churn probability metrics.", src: "https://streamlit.app" },
-                { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW" }
+                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Financial Dashboard Automation: Real-time financial metrics tracking. Multi-filter architecture to convert raw operational values into executive insights.", src: "https://streamlit.app?embed=true" },
+                { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW"}
             ],
             footerLink: 'SEE ALL MY PROJECTS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
@@ -55,7 +55,7 @@ const portfolioData = {
         hero: {
             title: 'Olá, eu sou <br><span class="highlight-name">Rafael Casella</span>',
             subtitle: "| CIENTISTA DE DADOS | ESPECIALISTA EM AUTOMAÇÃO | TRADER PROFISSIONAL |",
-            tagline: "CONVERTA DADOS FINANCEIROS COMPLEXOS EM INSIGHTS ESTRATÉGICOS",
+            tagline: "CONVERTO DADOS FINANCEIROS COMPLEXOS EM INSIGHTS ESTRATÉGICOS",
             btn: 'SOBRE MIM <i class="fas fa-chevron-down"></i>'
         },
         profile: {
@@ -79,14 +79,14 @@ const portfolioData = {
             title: "Explore Meus Dashboards ao Vivo",
             subtitle: "Selecione uma aba abaixo para carregar e interagir com as aplicações de dados direto desta interface.",
             tabs: [
-                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Automação de Dashboard Financeiro: Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro para converter dados operacionais brutos em insights executivos.", src: "https://streamlit.app?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "Automação de Dashboard Financeiro: Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro para converter dados operacionais brutos em insights executivos.", src: "https://streamlit.app?embed=true" },
                 { id: "tab-app2", label: "Churn Predictor", icon: "fa-users", desc: "Demonstração do Preditor de Churn: Portal interativo executando modelos preditivos. Insira variáveis de metadados do cliente para calcular a probabilidade de churn em tempo real.", src: "https://streamlit.app" },
                 { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
             ],
             footerLink: 'VER TODOS OS MEUS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
         methodology: {
-            tag: "METODOLOGIA",
+            tag: "METHODOLOGY",
             title: "Como Eu Trabalho",
             steps: [
                 { icon: "fa-search", title: "1. Descobrir", desc: "Fazer as perguntas de negócios corretas antes de consultar os dados." },
@@ -106,7 +106,7 @@ const portfolioData = {
 let currentLang = localStorage.getItem('pref-lang') || 'en';
 
 // ==========================================
-// PASSO 3 (PARTE 1 DE 2): O MOTOR DE RENDERIZAÇÃO
+// PASSO 3: O MOTOR DE RENDERIZAÇÃO (Injeção de HTML via DOM)
 // ==========================================
 function renderApp() {
     const d = portfolioData[currentLang];
@@ -142,8 +142,8 @@ function renderApp() {
                     <a href="#perfil" class="btn-outline-white">${d.hero.btn}</a>
                     <div class="social-icons-hero">
                         <a href="mailto:rafacasella@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/rafacasella" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rafael-casella-490457368/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </section>
@@ -178,6 +178,7 @@ function renderApp() {
                     </div>
                 </div>
             </section>
+            
             <!-- 3. PORTFOLIO SECTION -->
             <section id="portfolio" class="portfolio-section light-bg" style="border-top: 1px solid #eee;">
                 <h2>${d.projectsTitle}</h2>
@@ -209,7 +210,7 @@ function renderApp() {
                         ${d.liveDemos.tabs.map(t => `
                             <div class="tab-panel panel-${t.id.replace('tab-', '')}">
                                 <p class="tab-panel-desc">${t.desc}</p>
-                                ${t.src === "MEDIA_PREVIEW" ? `
+				${t.src === "MEDIA_PREVIEW" ? `
                                     <!-- LAYOUT EXCLUSIVO DA APLICAÇÃO DESKTOP -->
 				    <div class="desktop-app-preview" style="background: #0f172a; border: 1px solid rgba(0, 242, 254, 0.2); padding: 40px; text-align: center; border-radius: 8px; margin-top: 15px;">
     
@@ -236,16 +237,16 @@ function renderApp() {
 				    </div>
 
                                 ` : `
-                                    <div class="iframe-responsive">
-                                        <iframe src="${t.src}" style="width:100%; border:none;" allow="fullscreen"></iframe>
-                                    </div>
-                                `}
+
+                                <div class="iframe-responsive">
+                                    <iframe src="${t.src}" style="width:100%; border:none;" allow="fullscreen"></iframe>
+                                </div>
                             </div>
                         `).join('')}
                     </div>
                 </div>
                 <span class="section-tag" style="display: block; margin-top: 50px;">
-                    <a href="https://github.com" target="_blank" class="project-link" style="font-size: 14px; letter-spacing: 1px;">${d.liveDemos.footerLink}</a>
+                    <a href="https://github.com/rafacasella?tab=repositories" target="_blank" class="project-link" style="font-size: 14px; letter-spacing: 1px;">${d.liveDemos.footerLink}</a>
                 </span>
             </section>
             
@@ -269,11 +270,13 @@ function renderApp() {
                 <h2>${d.contact.title}</h2>
                 <p class="section-intro">${d.contact.subtitle}</p>
                 <a href="mailto:rafacasella@gmail.com" class="btn-email-green">${d.contact.btn}</a>
+                
                 <div class="social-icons-hero" style="margin-top: 40px; margin-bottom: 50px;">
-                    <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5517997635500" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/rafacasella" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/rafael-casella-490457368/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                
                 <footer class="simple-footer">
                     <p>&copy; 2026 Rafael Casella. ${currentLang === 'en' ? 'All rights reserved.' : 'Todos os direitos reservados.'}</p>
                     <p class="design-by">Design by <a href="https://github.com" target="_blank">Rafael Casella</a></p>
@@ -282,17 +285,27 @@ function renderApp() {
         </main>
     `;
 
+    // Garante que a aba do Streamlit ativa não mude após trocar o idioma
     document.getElementById(activeTab).checked = true;
+    
+    // Chama o Passo 4 para vincular o clique do botão
     setupEventListeners();
 }
+
 // ==========================================
 // PASSO 4: CONTROLADORES DE EVENTO (Escuta do Botão)
 // ==========================================
 function setupEventListeners() {
     const langBtn = document.getElementById('lang-switcher');
+    
     langBtn.addEventListener('click', () => {
+        // Alterna entre inglês e português
         currentLang = currentLang === 'en' ? 'pt' : 'en';
+        
+        // Grava no armazenamento local do navegador
         localStorage.setItem('pref-lang', currentLang);
+        
+        // Atualiza a tela com o novo idioma
         renderApp();
     });
 }
@@ -300,4 +313,6 @@ function setupEventListeners() {
 // ==========================================
 // PASSO 5: INICIALIZAÇÃO INICIAL (Start no Site)
 // ==========================================
+// Executa a renderização pela primeira vez assim que a página carrega
 renderApp();
+
