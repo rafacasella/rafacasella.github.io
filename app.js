@@ -211,23 +211,30 @@ function renderApp() {
                                 <p class="tab-panel-desc">${t.desc}</p>
                                 ${t.src === "MEDIA_PREVIEW" ? `
                                     <!-- LAYOUT EXCLUSIVO DA APLICAÇÃO DESKTOP -->
-                                    <div class="desktop-app-preview" style="background: #0f172a; border: 1px solid rgba(0, 242, 254, 0.2); padding: 40px; text-align: center; border-radius: 8px; margin-top: 15px;">
-                                        <i class="fas fa-desktop" style="font-size: 54px; color: #00f2fe; margin-bottom: 20px; display: block;"></i>
-                                        <h4 style="color: #fff; margin-bottom: 12px; font-size: 18px;">${currentLang === 'en' ? 'Standalone Production-Grade Desktop App' : 'Aplicação Executável Local de Alta Performance'}</h4>
-                                        <p style="color: #94a3b8; font-size: 14px; max-width: 650px; margin: 0 auto 25px auto;">
-                                            ${currentLang === 'en' 
-                                                ? 'This intelligence component architecture runs fully decoupled from cloud containers to bypass heavy protection layers via native low-level multi-threading. Download the pre-compiled binary below.' 
-                                                : 'Esta arquitetura de inteligência opera completamente desacoplada de contêineres em nuvem para burlar camadas de segurança complexas via multithreading nativo. Baixe o executável pré-compilado abaixo.'}
-                                        </p>
-                                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                                            <a href="https://github.com" target="_blank" class="btn-dark-filled" style="background: #00f2fe; color: #000; font-weight: bold; border: none; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; display: inline-block; cursor: pointer;">
-                                                <i class="fas fa-download"></i> ${currentLang === 'en' ? 'DOWNLOAD PRODUCTION .EXE' : 'BAIXAR EXECUTÁVEL .EXE'}
-                                            </a>
-                                            <a href="https://github.com" target="_blank" class="btn-dark-outline" style="border-color: #00f2fe; color: #00f2fe; font-weight: bold; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; background: transparent; display: inline-block;">
-                                                <i class="fab fa-github"></i> ${currentLang === 'en' ? 'VIEW SOURCE CODE' : 'VER CÓDIGO FONTE'}
-                                            </a>
-                                        </div>
-                                    </div>
+				    <div class="desktop-app-preview" style="background: #0f172a; border: 1px solid rgba(0, 242, 254, 0.2); padding: 40px; text-align: center; border-radius: 8px; margin-top: 15px;">
+    
+   					 <!-- PLAYER DE VISUALIZAÇÃO: O GIF DO SOFTWARE EM AÇÃO -->
+   					 <div style="max-width: 750px; margin: 0 auto 30px auto; border-radius: 6px; overflow: hidden; box-shadow: 0 0 20px rgba(0, 242, 254, 0.15); border: 1px solid rgba(255,255,255,0.05);">
+      					  <img src="monitor-demo.gif" alt="OSINT Monitor Demo" style="width: 100%; display: block; filter: brightness(0.95);">
+   					 </div>
+
+    					<i class="fas fa-desktop" style="font-size: 40px; color: #00f2fe; margin-bottom: 15px; display: block;"></i>
+    					<h4 style="color: #fff; margin-bottom: 12px; font-size: 18px;">${currentLang === 'en' ? 'Standalone Production-Grade Desktop App' : 'Aplicação Executável Local de Alta Performance'}</h4>
+   					 <p style="color: #94a3b8; font-size: 14px; max-width: 650px; margin: 0 auto 25px auto;">
+        					${currentLang === 'en' 
+           						 ? 'This intelligence component architecture runs fully decoupled from cloud containers to bypass heavy protection layers via native low-level multi-threading. Download the pre-compiled binary below.' 
+          						 : 'Esta arquitetura de inteligência opera completamente desacoplada de contêineres em nuvem para burlar camadas de segurança complexas via multithreading nativo. Baixe o executável pré-compilado abaixo.'}
+    					</p>
+   					 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+       						 <a href="https://github.com" target="_blank" class="btn-dark-filled" style="background: #00f2fe; color: #000; font-weight: bold; border: none; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; display: inline-block; cursor: pointer;">
+           						 <i class="fas fa-download"></i> ${currentLang === 'en' ? 'DOWNLOAD PRODUCTION .EXE' : 'BAIXAR EXECUTÁVEL .EXE'}
+       						 </a>
+      						  <a href="https://github.com" target="_blank" class="btn-dark-outline" style="border-color: #00f2fe; color: #00f2fe; font-weight: bold; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; background: transparent; display: inline-block;">
+           						 <i class="fab fa-github"></i> ${currentLang === 'en' ? 'VIEW SOURCE CODE' : 'VER CÓDIGO FONTE'}
+       						 </a>
+    					</div>
+				    </div>
+
                                 ` : `
                                     <div class="iframe-responsive">
                                         <iframe src="${t.src}" style="width:100%; border:none;" allow="fullscreen"></iframe>
