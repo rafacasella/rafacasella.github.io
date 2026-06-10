@@ -491,3 +491,60 @@ body {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   NOVAS REGRAS: BOTÃO DE IDIOMA E TRANSIÇÃO SUAVE 
+   ========================================================================== */
+
+/* Botão de Idioma Fixo no Canto Superior Direito */
+.lang-btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 999; /* Garante que fica acima do menu e do Hero */
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 1px solid rgba(0, 242, 254, 0.4); /* Seu Azul/Digital #00f2fe */
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px); /* Efeito glassmorphism sutil */
+}
+
+.lang-btn:hover {
+    background: #00f2fe;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+    border-color: #00f2fe;
+}
+
+/* Animação Suave para a troca de Idiomas (Injetada automaticamente no conteúdo) */
+.main-content {
+    animation: fadeInContent 0.4s ease-in-out;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0.4;
+        transform: translateY(2px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajuste Responsivo do Botão para Telas de Celular */
+@media (max-width: 768px) {
+    .lang-btn {
+        top: 20px;
+        right: 20px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
