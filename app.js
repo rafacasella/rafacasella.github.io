@@ -22,20 +22,20 @@ const portfolioData = {
         },
         projectsTitle: "Featured Projects",
         projects: [
-            { title: "Financial Dashboard Automation", prob: "Manual Excel reports taking 3h daily.", imp: "15h/week saved, real-time data instead of daily for the CFO.", link: "https://streamlit.app" },
-            { title: "Customer Churn Predictor", prob: "High monthly churn with no early warning system.", imp: "Logistic regression model with 82.65% accuracy.", link: "https://github.com" },
-            { title: "Web Scraping Monitor", prob: "Difficult manual tracking of global economic statements.", imp: "Stealth real-time pipeline to automatically monitor geopolitical mentions.", link: "https://github.com" }
+            { title: "Financial Dashboard Automation", prob: "Manual Excel reports taking 3h daily.", imp: "15h/week saved, real-time data instead of daily for the CFO.", link: "https://kpi4cfo.streamlit.app/?embed=true" },
+            { title: "Customer Churn Predictor", prob: "High monthly churn with no early warning system.", imp: "Logistic regression model with 82.65% accuracy.", link: "https://github.com/rafacasella/Data_Analysis_Portfolio/tree/main/Churn_Analysis" },
+            { title: "Web Scraping Monitor", prob: "Difficult manual tracking of global economic statements.", imp: "Stealth real-time pipeline to automatically monitor geopolitical mentions.", link: "https://github.com/rafacasella/Data_Science_Portfolio/tree/main/Web_Scapping_TruthSocial" }
         ],
         liveDemos: {
             tag: "LIVE INTERACTIVE DEMOS",
-            title: "Explore My Analytics Dashboards Live",
+            title: "Explore My Projects Live",
             subtitle: "Select a tab below to launch and interact with different data applications directly from this interface.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 EXECUTIVE CFO MONITOR:</strong> Real-time financial metrics tracking. Multi-filter architecture designed to convert raw operational values into strategic executive insights seamlessly.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "<strong>AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
                 { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW"}
             ],
-            footerLink: 'SEE ALL MY PROJECTS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
+            footerLink: 'SEE MORE PROJECTS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
         methodology: {
             tag: "METHODOLOGY",
@@ -70,20 +70,20 @@ const portfolioData = {
         },
         projectsTitle: "Projetos em Destaque",
         projects: [
-            { title: "Automação de Dashboard Financeiro", prob: "Relatórios manuais de Excel que consumiam 3h diárias.", imp: "15h/semana economizadas e com os dados em tempo real para o CFO.", link: "https://streamlit.app" },
-            { title: "Preditor de Churn de Clientes", prob: "Churn mensal alto e sem sistema de alerta precoce.", imp: "Modelo de regressão logística com acurácia de 82,65% atuando no problema.", link: "https://github.com" },
-            { title: "Monitor de Noticias (Web Scraping)", prob: "Dificuldade no rastreamento manual de pronunciamentos econômicos globais.", imp: "Pipeline em tempo real para monitorar menções geopolíticas automaticamente.", link: "https://github.com" }
+            { title: "Automação de Dashboard Financeiro", prob: "Relatórios manuais em Excel que consumiam 3h diárias.", imp: "15h/semana economizadas e com os dados em tempo real para o CFO.", link: "https://kpi4cfo.streamlit.app/?embed=true" },
+            { title: "Preditor de Churn de Clientes", prob: "Churn mensal alto e sem sistema de alerta precoce.", imp: "Modelo de regressão logística com acurácia de 82,65% atuando no problema.", link: "https://github.com/rafacasella/Data_Analysis_Portfolio/tree/main/Churn_Analysis" },
+            { title: "Monitor de Noticias (Web Scraping)", prob: "Dificuldade no rastreamento manual de pronunciamentos econômicos globais.", imp: "Pipeline em tempo real para monitorar menções geopolíticas automaticamente.", link: "https://github.com/rafacasella/Data_Science_Portfolio/tree/main/Web_Scapping_TruthSocial" }
         ],
         liveDemos: {
             tag: "DEMONSTRAÇÕES INTERATIVAS",
-            title: "Explore Meus Dashboards ao Vivo",
+            title: "Explore alguns Projetos ao Vivo",
             subtitle: "Selecione uma aba abaixo para carregar e interagir com as aplicações de dados direto desta interface.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 MONITOR EXECUTIVO DO CFO:</strong> Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro projetada para converter dados operacionais brutos em insights estratégicos para tomada de decisão.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Churn Predictor", icon: "fa-users", desc: "Demonstração do Preditor de Churn: Portal interativo executando modelos preditivos. Insira variáveis de metadados do cliente para calcular a probabilidade de churn em tempo real.", src: "https://streamlit.app" },
-                { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
+                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "Estratégia Quant para Trading: Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
             ],
-            footerLink: 'VER TODOS OS MEUS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
+            footerLink: 'AOMPANHAR MAIS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
         methodology: {
             tag: "METHODOLOGY",
