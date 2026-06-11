@@ -80,14 +80,14 @@ const portfolioData = {
             subtitle: "Selecione uma das abas abaixo para visualizar as aplicações em tempo real.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 DASHBOARD EXECUTIVO DO CFO:</strong> Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro projetada para converter dados operacionais brutos em insights estratégicos para tomada de decisão.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "<strong>Estratégia Quant para Trading:<strong> Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
-                { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
+                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "<strong> Estratégia Quant para Trading:<strong> Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong> Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
             ],
             footerLink: 'AOMPANHAR MAIS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
         methodology: {
-            tag: "METHODOLOGY",
-            title: "Como Eu Trabalho",
+            tag: "METODOLOGIA",
+            title: "Abordagem Profissional",
             steps: [
                 { icon: "fa-search", title: "1. Descobrir", desc: "Fazer as perguntas de negócios corretas antes de consultar os dados." },
                 { icon: "fa-broom", title: "2. Limpar", desc: "Pandas e SQL para transformar conjuntos de dados caóticos em estruturas organizadas." },
@@ -96,7 +96,7 @@ const portfolioData = {
                 { icon: "fa-robot", title: "5. Automatizar", desc: "Desenvolvimento e implantação de scripts ETL robustos em Python que gerenciam pipelines de processamento de ponta a ponta." }
             ]
         },
-        contact: { title: "FALE COMIGO!", subtitle: "Vamos construir algo grande juntos.", btn: '<i class="fas fa-envelope"></i> ENVIAR UM E-MAIL' }
+        contact: { title: "AGENDE UMA CONVERSA!", subtitle: "Vamos impulsionar seus resultados.", btn: '<i class="fas fa-envelope"></i> ENVIAR UM E-MAIL' }
     }
 };
 
