@@ -77,10 +77,10 @@ const portfolioData = {
         liveDemos: {
             tag: "DEMONSTRAÇÕES INTERATIVAS",
             title: "Explore alguns Projetos ao Vivo",
-            subtitle: "Selecione uma aba abaixo para carregar e interagir com as aplicações de dados direto desta interface.",
+            subtitle: "Selecione uma das abas abaixo para visualizar as aplicações em tempo real.",
             tabs: [
-                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 MONITOR EXECUTIVO DO CFO:</strong> Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro projetada para converter dados operacionais brutos em insights estratégicos para tomada de decisão.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "Estratégia Quant para Trading: Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 DASHBOARD EXECUTIVO DO CFO:</strong> Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro projetada para converter dados operacionais brutos em insights estratégicos para tomada de decisão.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
+                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "<strong>Estratégia Quant para Trading:<strong> Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
                 { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong>Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
             ],
             footerLink: 'AOMPANHAR MAIS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
