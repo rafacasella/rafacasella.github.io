@@ -32,8 +32,8 @@ const portfolioData = {
             subtitle: "Select a tab below to launch and interact with different data applications directly from this interface.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 EXECUTIVE CFO MONITOR:</strong> Real-time financial metrics tracking. Multi-filter architecture designed to convert raw operational values into strategic executive insights seamlessly.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "<strong>AI Quant Strategy: Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
-                { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong>OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW"}
+                { id: "tab-app2", label: "Quant Strategy", icon: "fa-robot", desc: "<strong>AI Quant Strategy:</strong> Real-time predictive trading dashboard", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app3", label: "Geopolitical Monitor (Desktop)", icon: "fa-desktop", desc: "<strong> OSINT Geopolitical Monitor:</strong> Multi-threaded desktop automation built with CustomTkinter and Playwright. Real-time API monitoring pipeline engineered to bypass web protections locally and deliver immediate notifications.", src: "MEDIA_PREVIEW"}
             ],
             footerLink: 'SEE MORE PROJECTS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
@@ -229,10 +229,10 @@ function renderApp() {
         					${currentLang === 'en' ? 'This intelligence component architecture runs fully decoupled from cloud containers to bypass heavy protection layers via native low-level multi-threading. Download the pre-compiled binary below.' : 'Esta arquitetura de inteligência opera completamente desacoplada de contêineres em nuvem para burlar camadas de segurança complexas via multithreading nativo. Baixe o executável pré-compilado abaixo.'} 
           				 </p>
    					 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-       						 <a href="https://github.com" target="_blank" class="btn-dark-filled" style="background: #00f2fe; color: #000; font-weight: bold; border: none; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; display: inline-block; cursor: pointer;">
+       						 <a href="https://github.com/rafacasella/Data_Science_Portfolio/releases/download/v1.0.0/truth_monitor_desktop.exe" target="_blank" class="btn-dark-filled" style="background: #00f2fe; color: #000; font-weight: bold; border: none; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; display: inline-block; cursor: pointer;">
            						 <i class="fas fa-download"></i> ${currentLang === 'en' ? 'DOWNLOAD PRODUCTION .EXE' : 'BAIXAR EXECUTÁVEL .EXE'}
        						 </a>
-      						  <a href="https://github.com" target="_blank" class="btn-dark-outline" style="border-color: #00f2fe; color: #00f2fe; font-weight: bold; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; background: transparent; display: inline-block;">
+      						  <a href="https://github.com/rafacasella/Data_Science_Portfolio/blob/v1.0.0/Web_Scapping_TruthSocial/truth_monitor_desktop.py" target="_blank" class="btn-dark-outline" style="border-color: #00f2fe; color: #00f2fe; font-weight: bold; text-decoration: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; background: transparent; display: inline-block;">
            						 <i class="fab fa-github"></i> ${currentLang === 'en' ? 'VIEW SOURCE CODE' : 'VER CÓDIGO FONTE'}
        						 </a>
     					</div>
