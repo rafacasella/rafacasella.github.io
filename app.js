@@ -174,7 +174,11 @@ function renderApp() {
                         <div class="skill-bar-wrapper"><div class="skill-info"><span>MACHINE LEARNING (Scikit-Learn, Statsmodels)</span><span class="badge">${currentLang === 'en' ? 'Advanced' : 'Avançado'}</span></div><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
                         <div class="skill-bar-wrapper"><div class="skill-info"><span>DEEP LEARNING (TensorFlow, Keras)</span><span class="badge grey">${currentLang === 'en' ? 'Intermediate' : 'Intermediário'}</span></div><div class="bar"><div class="progress" style="width: 65%;"></div></div></div>
                         <div class="skill-bar-wrapper"><div class="skill-info"><span>AUTOMATION & VISUALIZATION (Streamlit, Playwright)</span><span class="badge">${currentLang === 'en' ? 'Advanced' : 'Avançado'}</span></div><div class="bar"><div class="progress" style="width: 88%;"></div></div></div>
-                        <a href="cv_2026_en.pdf" target="_blank" DOWNLOAD="cv_2026_en.pdf" class="btn-dark-filled">${currentLang === 'en' ? 'DOWNLOAD MY RESUME' : 'BAIXAR MEU CURRÍCULO'}</a>
+                        ${currentLang === 'en' ? 
+ 			  `<a href="cv_2026_en.pdf" target="_blank" class="btn-dark-filled">DOWNLOAD MY RESUME</a>` : 
+ 			  `<a href="cv_2026_pt.pdf" target="_blank" class="btn-dark-filled">BAIXAR MEU CURRÍCULO</a>`
+			}
+
                     </div>
                 </div>
             </section>
