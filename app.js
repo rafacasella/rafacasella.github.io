@@ -80,8 +80,8 @@ const portfolioData = {
             subtitle: "Selecione uma das abas abaixo para visualizar as aplicações em tempo real.",
             tabs: [
                 { id: "tab-app1", label: "CFO Dashboard", icon: "fa-chart-line", desc: "<strong>📊 DASHBOARD EXECUTIVO DO CFO:</strong> Acompanhamento de métricas financeiras em tempo real. Arquitetura multi-filtro projetada para converter dados operacionais brutos em insights estratégicos para tomada de decisão.", src: "https://kpi4cfo.streamlit.app/?embed=true" },
-                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "<strong> Estratégia Quant para Trading:<strong> Robo Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
-                { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong> Monitor Geopolítico OSINT:</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente com máxima performance.", src: "MEDIA_PREVIEW" }
+                { id: "tab-app2", label: "Quant Trading", icon: "fa-users", desc: "<strong>🤖 Estratégia Quant para Trading:</strong> Painel Operacional em tempo real.", src: "https://quantumtradingg.streamlit.app/?embed=true&embed_options=disable_light_theme" },
+                { id: "tab-app3", label: "Monitor Geopolítico (Desktop)", icon: "fa-desktop", desc: "<strong>🖥️ Monitor Geopolítico (OSINT):</strong> Automação desktop multithreading nativa construída com CustomTkinter e Playwright. Pipeline de monitoramento via interceptação de rede projetado para rodar localmente.", src: "MEDIA_PREVIEW" }
             ],
             footerLink: 'AOMPANHAR MAIS PROJETOS <i class="fas fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i>'
         },
@@ -169,11 +169,11 @@ function renderApp() {
                     <div class="col">
                         <h2>${d.profile.stackTitle}</h2>
                         <p class="description">${d.profile.stackDesc}</p>
-                        <div class="skill-bar-wrapper"><div class="skill-info"><span>PYTHON (Pandas, Matplotlib, Seaborn)</span><span class="badge">${currentLang === 'en' ? 'Core' : 'Principal'}</span></div><div class="bar"><div class="progress" style="width: 95%;"></div></div></div>
-                        <div class="skill-bar-wrapper"><div class="skill-info"><span>SQL & DATABASES (PostgreSQL, MySQL)</span><span class="badge">${currentLang === 'en' ? 'Core' : 'Principal'}</span></div><div class="bar"><div class="progress" style="width: 90%;"></div></div></div>
-                        <div class="skill-bar-wrapper"><div class="skill-info"><span>MACHINE LEARNING (Scikit-Learn, Statsmodels)</span><span class="badge">${currentLang === 'en' ? 'Advanced' : 'Avançado'}</span></div><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
-                        <div class="skill-bar-wrapper"><div class="skill-info"><span>DEEP LEARNING (TensorFlow, Keras)</span><span class="badge grey">${currentLang === 'en' ? 'Intermediate' : 'Intermediário'}</span></div><div class="bar"><div class="progress" style="width: 65%;"></div></div></div>
-                        <div class="skill-bar-wrapper"><div class="skill-info"><span>AUTOMATION & VISUALIZATION (Streamlit, Playwright)</span><span class="badge">${currentLang === 'en' ? 'Advanced' : 'Avançado'}</span></div><div class="bar"><div class="progress" style="width: 88%;"></div></div></div>
+                        <div class="skill-bar-wrapper"><div class="skill-info"><span>PYTHON (Pandas, Matplotlib, Seaborn)</span><span class="badge">${currentLang === 'en' ? 'Skilled' : 'Pleno'}</span></div><div class="bar"><div class="progress" style="width: 95%;"></div></div></div>
+                        <div class="skill-bar-wrapper"><div class="skill-info"><span>SQL & DATABASES (PostgreSQL, MySQL)</span><span class="badge">${currentLang === 'en' ? 'Skilled' : 'Pleno'}</span></div><div class="bar"><div class="progress" style="width: 90%;"></div></div></div>
+                        <div class="skill-bar-wrapper"><div class="skill-info"><span>MACHINE LEARNING (Scikit-Learn, Statsmodels)</span><span class="badge">${currentLang === 'en' ? 'Competent' : 'Intermediário'}</span></div><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
+                        <div class="skill-bar-wrapper"><div class="skill-info"><span>DEEP LEARNING (TensorFlow, Keras)</span><span class="badge grey">${currentLang === 'en' ? 'Foundational' : 'Básico'}</span></div><div class="bar"><div class="progress" style="width: 65%;"></div></div></div>
+                        <div class="skill-bar-wrapper"><div class="skill-info"><span>AUTOMATION & VISUALIZATION (Streamlit, Playwright)</span><span class="badge">${currentLang === 'en' ? 'Competent' : 'Intermediário'}</span></div><div class="bar"><div class="progress" style="width: 88%;"></div></div></div>
                         ${currentLang === 'en' ? 
  			  `<a href="cv_2026_en.pdf" target="_blank" class="btn-dark-filled">DOWNLOAD MY RESUME</a>` : 
  			  `<a href="cv_2026_pt.pdf" target="_blank" class="btn-dark-filled">BAIXAR MEU CURRÍCULO</a>`
